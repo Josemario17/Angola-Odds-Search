@@ -40,8 +40,8 @@ This research can assist users in making informed betting decisions and identify
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/odds-research-angolan-platforms.git
-   cd odds-research-angolan-platforms
+   git clone https://github.com/Josemario17/Angola-Odds-Search.git
+   cd Angola-Odds-Search.git
    ```
 ---
 
