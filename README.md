@@ -9,7 +9,7 @@ This repository contains code and resources for conducting research on betting o
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Requirements](#requirements)
-- [Installation](#installation)
+- [Installation](#installation)  
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
