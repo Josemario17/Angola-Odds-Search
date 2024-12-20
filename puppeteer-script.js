@@ -21,7 +21,7 @@ async function fetchOdds(competitionName) {
     try {
         browser = await puppeteer.launch({
             headless: true,
-            args: ['--disable-http2'], 
+            args: ['--no-sandbox', '--disable-http2'], 
         });
 
         const page = await browser.newPage();
