@@ -19,10 +19,9 @@ const leagues = [
 async function fetchOdds(competitionName) {
     let browser;
     try {
-        // Inicia o navegador
         browser = await puppeteer.launch({
             headless: true,
-            args: ['--disable-http2'], // Resolve possíveis erros de HTTP/2
+            args: ['--disable-http2'], 
         });
 
         const page = await browser.newPage();
@@ -34,11 +33,7 @@ async function fetchOdds(competitionName) {
 
         const url = league.linkUrl;
         console.log(`Acessando URL: ${url}`);
-
-        // Navega até a URL
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
-
-        // Aguarda os seletores estarem disponíveis
         await page.waitForSelector('.odds-button__price', { timeout: 10000 });
         await page.waitForSelector('.event-card__team-name', { timeout: 10000 });
 
@@ -85,8 +80,9 @@ async function fetchOdds(competitionName) {
     }
 }
 
-// Exemplo de uso
 (async () => {
     const result = await fetchOdds('Premier League');
     console.log('Resultado:', result);
 })();
+
+export { fetchOdds };
